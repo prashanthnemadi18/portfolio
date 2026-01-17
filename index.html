@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prashanth Nemadi | Software AI Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="https://ui-avatars.com/api/?name=PN&size=50&background=667eea&color=fff&bold=true&font-size=0.5" alt="PN Logo" class="logo-image">
+      <div class="logo">Prashanth Nemadi</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.pdf" target="_blank" class="resume-link">📄 Resume</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="profile-image">
+        <img src="https://ui-avatars.com/api/?name=Prashanth+Nemadi&size=200&background=667eea&color=fff&bold=true&font-size=0.4" alt="Prashanth Nemadi">
+      </div>
+      <p class="hero-location">Bagalkot, Karnataka · India</p>
+      <h1>Hi, I'm Prashanth</h1>
+      <h2>Software AI Engineer & Full-Stack Developer</h2>
+      <p>
+        I build AI-powered, scalable applications using Java, Python, RESTful APIs, and modern web frameworks like
+        Flask, FastAPI, Spring Boot, React, and Next.js. I enjoy solving real-world problems in cybersecurity,
+        agriculture, and education.
+      </p>
+      <div class="hero-actions">
+        <a href="about.html" class="btn">Learn More About Me</a>
+        <a href="#projects" class="btn">View My Projects</a>
+        <a href="resume.pdf" class="btn btn-outline" download>📥 Download Resume</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-links">
+        <a href="mailto:prashanthnemadi@gmail.com">📧 Email</a>
+        <a href="https://github.com/prashanthnemadi18" target="_blank">💻 GitHub</a>
+        <a href="https://linkedin.com/in/prashanthnemadi18" target="_blank">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p style="color: #2d3748; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; animation: fadeInUp 0.8s ease 0.3s backwards;">
+      I'm a Software AI Engineer with hands-on experience in building end-to-end solutions from backend APIs and
+      databases to modern web frontends and machine learning pipelines.
+      I've worked on projects in cybersecurity, agriculture sustainability, and online education.
+    </p>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="about.html" class="btn" style="display: inline-block;">Read Full Story →</a>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+
+    <div class="skills-category">
+      <h3>Programming Languages</h3>
+      <div class="skills-grid">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">C</div>
+        <div class="skill-card">C++</div>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3>Frameworks & Technologies</h3>
+      <div class="skills-grid">
+        <div class="skill-card">Flask</div>
+        <div class="skill-card">FastAPI</div>
+        <div class="skill-card">Spring Boot</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">Next.js</div>
+        <div class="skill-card">Tailwind CSS</div>
+        <div class="skill-card">Streamlit</div>
+        <div class="skill-card">RESTful APIs</div>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3>Data & AI</h3>
+      <div class="skills-grid">
+        <div class="skill-card">Machine Learning</div>
+        <div class="skill-card">Artificial Intelligence</div>
+        <div class="skill-card">Pandas</div>
+        <div class="skill-card">NumPy</div>
+        <div class="skill-card">Scikit-Learn</div>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3>Tools & Platforms</h3>
+      <div class="skills-grid">
+        <div class="skill-card">Git &amp; GitHub</div>
+        <div class="skill-card">Jupyter Notebook</div>
+        <div class="skill-card">VS Code</div>
+        <div class="skill-card">Docker (basics)</div>
+        <div class="skill-card">Cloud Computing (foundations)</div>
+        <div class="skill-card">SQL &amp; MongoDB</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <p class="section-subtitle">
+      A selection of projects across cybersecurity, sustainability, and education.
+    </p>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <article class="project-card">
+        <div class="project-image">
+          <img src="https://placehold.co/600x400/1e293b/60a5fa?text=Cybersecurity+Honeypot" alt="Honeypot Cyberattack Detection System">
+        </div>
+        <h3>Honeypot-Based Cyberattack Detection System</h3>
+        <p>
+          Built a honeypot-driven system to capture, analyze, and classify cyberattacks using machine learning and
+          real-time dashboards.
+        </p>
+        <ul class="project-points">
+          <li>Deployed Cowrie honeypots in Docker to simulate SSH services and collect attack logs and PCAP data.</li>
+          <li>Implemented Python pipelines to parse honeypot logs and store structured data in MySQL for analysis.</li>
+          <li>Trained a Random Forest model with Scikit-Learn to detect suspicious activity.</li>
+          <li>Developed a Flask API plus a React + Tailwind dashboard to monitor live alerts and XAI insights.</li>
+        </ul>
+        <p class="tech">Tech: Python, Flask, Scikit-Learn, MySQL, React, Tailwind CSS, Docker, Cowrie</p>
+        <div class="links">
+          <a href="#" target="_blank">GitHub (soon)</a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="project-image">
+          <img src="https://placehold.co/600x400/1e293b/34d399?text=Food+Waste+Platform" alt="Food Waste Reimagined Platform">
+        </div>
+        <h3>Food Waste Reimagined - Agriculture & Sustainability</h3>
+        <p>
+          An intelligent platform that predicts food expiration, reduces waste, and encourages community sharing and donations.
+        </p>
+        <ul class="project-points">
+          <li>Used Python and Scikit-Learn to predict food expiry based on purchase history and storage conditions.</li>
+          <li>Built a Flask backend with a React interface for logging items, viewing expiry alerts, and getting recipe ideas.</li>
+          <li>Added community features to donate surplus food to local NGOs and food banks.</li>
+          <li>Created dashboards to show savings, usage patterns, and estimated CO2 reduction.</li>
+        </ul>
+        <p class="tech">Tech: Python, Flask, Scikit-Learn, React, REST APIs, Data Visualization</p>
+        <div class="links">
+          <a href="#" target="_blank">GitHub (soon)</a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card">
+        <div class="project-image">
+          <img src="https://placehold.co/600x400/1e293b/a78bfa?text=AI+Exam+System" alt="AI-Based Online Examination System">
+        </div>
+        <h3>AI-Based Online Examination System</h3>
+        <p>
+          A modern exam platform that uses generative AI to create questions and provides a secure test experience for students.
+        </p>
+        <ul class="project-points">
+          <li>Developed a Next.js + React + TypeScript web app for teachers to create and manage exams.</li>
+          <li>Integrated Google Gemini AI to auto-generate MCQs, true/false, and descriptive questions from topics and difficulty levels.</li>
+          <li>Implemented features like exam timer, auto-submit, and anti-cheating checks (tab switch, copy/paste blocking).</li>
+          <li>Built PDF exporters for question papers and results using jsPDF.</li>
+        </ul>
+        <p class="tech">Tech: Next.js, React, TypeScript, Google Gemini AI, jsPDF</p>
+        <div class="links">
+          <a href="#" target="_blank">GitHub (soon)</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Bahubali College of Engineering</h3>
+          <p class="timeline-role">B.E. in Computer Science (Pursuing)</p>
+          <p class="timeline-meta">Aug 2022 - Jun 2026 · Shravanabelagola, Karnataka</p>
+          <p>Current CGPA: 8.1</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Sangameshwar Composite PU College</h3>
+          <p class="timeline-role">Pre-University</p>
+          <p class="timeline-meta">May 2020 - Jul 2022 · Aminagad, Karnataka</p>
+          <p>Percentage: 65.6%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section">
+    <h2>Achievements & Activities</h2>
+    <ul class="achievements-list">
+      <li>🏆 Secured 1st place in a Mathematics Day quiz competition.</li>
+      <li>👥 Led teams in multiple hackathons, gaining strong experience in collaboration, rapid prototyping, and problem-solving.</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>If you'd like to discuss an opportunity, collaboration, or project, feel free to reach out.</p>
+    <ul class="contact-list">
+      <li><strong>Phone:</strong> <a href="tel:+918147070249">+91 81470 70249</a></li>
+      <li><strong>Email:</strong> <a href="mailto:prashanthnemadi@gmail.com">prashanthnemadi@gmail.com</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/prashanthnemadi18" target="_blank">github.com/prashanthnemadi18</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/prashanthnemadi18" target="_blank">linkedin.com/in/prashanthnemadi18</a></li>
+      <li><strong>Location:</strong> Bagalkot, Karnataka, India</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Prashanth Nemadi. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
