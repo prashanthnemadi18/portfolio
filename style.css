@@ -883,17 +883,19 @@ body::after {
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   border: 3px solid transparent;
   background: linear-gradient(white, white) padding-box,
               linear-gradient(135deg, #667eea, #764ba2) border-box;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  filter: brightness(1.08) contrast(1.05);
 }
 
 .logo-image:hover {
   transform: scale(1.1) rotate(5deg);
   box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+  filter: brightness(1.12) contrast(1.08);
 }
 
 /* Profile Image in Hero */
@@ -910,19 +912,19 @@ body::after {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   border: 6px solid transparent;
   background: linear-gradient(white, white) padding-box,
               linear-gradient(135deg, #667eea, #764ba2) border-box;
   box-shadow: 0 15px 50px rgba(102, 126, 234, 0.5);
   transition: all 0.4s ease;
-  filter: brightness(1.05) contrast(1.08);
+  filter: brightness(1.08) contrast(1.05) saturate(1.1);
 }
 
 .profile-image:hover img {
   transform: scale(1.08);
   box-shadow: 0 20px 60px rgba(102, 126, 234, 0.7);
-  filter: brightness(1.1) contrast(1.12);
+  filter: brightness(1.12) contrast(1.08) saturate(1.15);
 }
 
 .profile-image::before {
@@ -982,19 +984,19 @@ body::after {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   border: 8px solid transparent;
   background: linear-gradient(white, white) padding-box,
               linear-gradient(135deg, #667eea, #764ba2) border-box;
   box-shadow: 0 20px 60px rgba(102, 126, 234, 0.6);
   transition: all 0.5s ease;
-  filter: brightness(1.05) contrast(1.08);
+  filter: brightness(1.08) contrast(1.05) saturate(1.1);
 }
 
 .profile-image-large:hover img {
   transform: scale(1.05) rotate(2deg);
   box-shadow: 0 25px 70px rgba(102, 126, 234, 0.8);
-  filter: brightness(1.1) contrast(1.12);
+  filter: brightness(1.12) contrast(1.08) saturate(1.15);
 }
 
 .profile-image-large::before {
