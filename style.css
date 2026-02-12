@@ -590,6 +590,8 @@ body::after {
 
 .project-content {
   padding: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .project-card::before {
@@ -602,6 +604,8 @@ body::after {
   background: linear-gradient(45deg, transparent, rgba(0, 242, 254, 0.15), transparent);
   transform: rotate(45deg);
   transition: all 0.6s ease;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .project-card:hover::before {
@@ -683,6 +687,9 @@ body::after {
   font-size: 0.95rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 242, 254, 0.4);
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .project-link:hover {
