@@ -16,7 +16,6 @@
 
 html {
   scroll-behavior: auto;
-  perspective: 2000px;
   overflow-x: hidden;
 }
 
@@ -184,8 +183,6 @@ body::before {
   max-width: 800px;
   position: relative;
   z-index: 1;
-  transform-style: preserve-3d;
-  animation: heroEntrance 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @keyframes heroEntrance {

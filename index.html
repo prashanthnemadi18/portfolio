@@ -1092,22 +1092,22 @@
     // Check on scroll
     // window.addEventListener('scroll', revealOnScroll);
     
-    // Parallax Depth Effect
-    window.addEventListener('scroll', function() {
-      const scrolled = window.pageYOffset;
+    // Parallax Depth Effect - DISABLED for normal scrolling
+    // window.addEventListener('scroll', function() {
+    //   const scrolled = window.pageYOffset;
       
-      // Hero parallax
-      const hero = document.querySelector('.hero');
-      if (hero) {
-        hero.style.transform = `translateZ(-100px) scale(1.1) translateY(${scrolled * 0.3}px)`;
-      }
+    //   // Hero parallax
+    //   const hero = document.querySelector('.hero');
+    //   if (hero) {
+    //     hero.style.transform = `translateZ(-100px) scale(1.1) translateY(${scrolled * 0.3}px)`;
+    //   }
       
-      // Profile image float
-      const profileImage = document.querySelector('.profile-image');
-      if (profileImage) {
-        profileImage.style.transform = `translateY(${Math.sin(scrolled * 0.01) * 10}px)`;
-      }
-    });
+    //   // Profile image float
+    //   const profileImage = document.querySelector('.profile-image');
+    //   if (profileImage) {
+    //     profileImage.style.transform = `translateY(${Math.sin(scrolled * 0.01) * 10}px)`;
+    //   }
+    // });
 
     // Holographic Text Effect
     const headings = document.querySelectorAll('.section h2');
