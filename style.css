@@ -128,11 +128,11 @@ body::before {
 
 /* Hero - The Entrance */
 .hero {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 8% 6rem 8%;
+  padding: 4rem 8%;
   background: #000000;
   position: relative;
   overflow: hidden;
@@ -1830,10 +1830,11 @@ body::before {
 
 /* About Summary Section */
 .about-summary {
+  display: block;
   padding: 5rem 8%;
   background: linear-gradient(135deg, rgba(0, 242, 254, 0.05) 0%, rgba(167, 139, 250, 0.05) 100%);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   margin-top: 0;
   clear: both;
   z-index: 10;
@@ -1863,14 +1864,13 @@ body::before {
   text-align: center;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
-  transform-style: preserve-3d;
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: none;
 }
 
 .stat-card.reveal {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: none;
 }
 
 .stat-card::after {
