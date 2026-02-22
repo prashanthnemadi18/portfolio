@@ -40,7 +40,6 @@ body::before {
     radial-gradient(ellipse at bottom, rgba(167, 139, 250, 0.15) 0%, transparent 50%);
   z-index: -2;
   pointer-events: none;
-  animation: ambientGlow 10s ease-in-out infinite;
 }
 
 @keyframes ambientGlow {
@@ -93,8 +92,6 @@ body::before {
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(0, 242, 254, 0.3);
   box-shadow: 0 4px 30px rgba(0, 242, 254, 0.2);
-  animation: fadeIn 0.8s ease;
-  transform-style: preserve-3d;
 }
 
 .logo {
@@ -105,7 +102,6 @@ body::before {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: slideInLeft 0.8s ease;
   position: relative;
   cursor: pointer;
   letter-spacing: -0.5px;
@@ -114,7 +110,6 @@ body::before {
 
 
 .navbar nav {
-  animation: fadeIn 0.8s ease;
 }
 
 .navbar nav a {
@@ -154,7 +149,6 @@ body::before {
   top: -300px;
   right: -300px;
   filter: blur(100px);
-  animation: float 8s ease-in-out infinite;
   transform: translateZ(-50px);
 }
 
@@ -168,7 +162,6 @@ body::before {
   bottom: -250px;
   left: -250px;
   filter: blur(100px);
-  animation: float 10s ease-in-out infinite reverse;
   transform: translateZ(-50px);
 }
 
@@ -201,7 +194,6 @@ body::before {
   color: #00f2fe;
   margin-bottom: 0.5rem;
   font-weight: 600;
-  animation: fadeIn 1s ease;
 }
 
 .hero h1 {
@@ -351,7 +343,6 @@ body::before {
 
 .section.reveal::before {
   opacity: 1;
-  animation: borderGlow 3s ease-in-out infinite;
 }
 
 @keyframes borderGlow {
@@ -785,7 +776,6 @@ body::before {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(0, 242, 254, 0.3);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation: fadeInUp 0.8s ease;
   color: #e5e7eb;
   font-size: 1.05rem;
   position: relative;
@@ -1528,7 +1518,6 @@ body::before {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  animation: fadeIn 0.8s ease;
 }
 
 .logo-image {
@@ -1555,8 +1544,6 @@ body::before {
   height: 220px;
   margin: 0 auto 2rem;
   position: relative;
-  animation: fadeIn 1s ease;
-  transform-style: preserve-3d;
 }
 
 .profile-image img {
@@ -1593,7 +1580,6 @@ body::before {
   z-index: -1;
   opacity: 0.3;
   filter: blur(20px);
-  animation: pulse3D 3s ease-in-out infinite;
 }
 
 @keyframes pulse3D {
