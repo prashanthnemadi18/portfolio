@@ -178,6 +178,7 @@ body::before {
   max-width: 800px;
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 @keyframes heroEntrance {
@@ -238,14 +239,23 @@ body::before {
   margin-bottom: 1.5rem;
 }
 
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
 .hero-links a {
-  margin-right: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 1rem;
   text-decoration: none;
   color: #00f2fe;
   font-weight: 600;
   transition: all 0.3s ease;
-  display: inline-block;
 }
 
 .hero-links a:hover {
