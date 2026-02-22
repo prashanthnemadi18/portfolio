@@ -132,10 +132,11 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 8%;
+  padding: 4rem 8% 6rem 8%;
   background: #000000;
   position: relative;
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 .hero::before {
@@ -148,7 +149,8 @@ body::before {
   top: -300px;
   right: -300px;
   filter: blur(100px);
-  transform: translateZ(-50px);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero::after {
@@ -161,7 +163,8 @@ body::before {
   bottom: -250px;
   left: -250px;
   filter: blur(100px);
-  transform: translateZ(-50px);
+  z-index: 0;
+  pointer-events: none;
 }
 
 @keyframes float {
@@ -1833,6 +1836,7 @@ body::before {
   overflow: hidden;
   margin-top: 0;
   clear: both;
+  z-index: 10;
 }
 
 .summary-container {
