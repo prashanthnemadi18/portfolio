@@ -982,28 +982,28 @@
       });
     });
 
-    // 3D Tilt Effect for Cards (Subtle)
-    const cards = document.querySelectorAll('.project-card, .skill-card, .stat-card');
+    // 3D Tilt Effect for Cards - DISABLED
+    // const cards = document.querySelectorAll('.project-card, .skill-card, .stat-card');
     
-    cards.forEach(card => {
-      card.addEventListener('mousemove', function(e) {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+    // cards.forEach(card => {
+    //   card.addEventListener('mousemove', function(e) {
+    //     const rect = card.getBoundingClientRect();
+    //     const x = e.clientX - rect.left;
+    //     const y = e.clientY - rect.top;
         
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
+    //     const centerX = rect.width / 2;
+    //     const centerY = rect.height / 2;
         
-        const rotateX = (y - centerY) / 20; // Reduced intensity
-        const rotateY = (centerX - x) / 20; // Reduced intensity
+    //     const rotateX = (y - centerY) / 20;
+    //     const rotateY = (centerX - x) / 20;
         
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
-      });
+    //     card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
+    //   });
       
-      card.addEventListener('mouseleave', function() {
-        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
-      });
-    });
+    //   card.addEventListener('mouseleave', function() {
+    //     card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+    //   });
+    // });
 
     // Cinematic Scroll Reveal - DISABLED for normal scrolling
     // const revealElements = document.querySelectorAll('.section, .project-card, .skill-card, .stat-card');
