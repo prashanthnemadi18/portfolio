@@ -1012,6 +1012,8 @@ body::before {
     width: 200px;
     height: 200px;
     margin: 0 auto 1.5rem;
+    object-fit: contain;
+    background: #f5f5f5;
   }
 
   .hero h1 {
@@ -1366,6 +1368,8 @@ body::before {
   .profile-image {
     width: 180px;
     height: 180px;
+    object-fit: contain;
+    background: #f5f5f5;
   }
 
   .hero h1 {
