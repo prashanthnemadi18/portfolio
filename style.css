@@ -128,11 +128,11 @@ body::before {
 
 /* Hero - The Entrance */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 8%;
+  padding: 6rem 8% 8rem 8%;
   background: #000000;
   position: relative;
   overflow: hidden;
@@ -236,7 +236,7 @@ body::before {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .hero-links {
