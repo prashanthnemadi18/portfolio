@@ -1047,8 +1047,8 @@ body::before {
   }
 
   .profile-image {
-    width: 140px !important;
-    height: 140px !important;
+    width: 160px !important;
+    height: 160px !important;
     margin: 0 auto 1.5rem;
     background: #ffffff;
   }
@@ -1409,8 +1409,8 @@ body::before {
 /* Small Mobile Devices */
 @media (max-width: 480px) {
   .profile-image {
-    width: 120px !important;
-    height: 120px !important;
+    width: 150px !important;
+    height: 150px !important;
     margin: 0 auto 1.2rem;
     background: #ffffff;
   }
@@ -1526,8 +1526,8 @@ body::before {
   }
 
   .profile-image {
-    width: 130px !important;
-    height: 130px !important;
+    width: 150px !important;
+    height: 150px !important;
     background: #ffffff;
   }
 
