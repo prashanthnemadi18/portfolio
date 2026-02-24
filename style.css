@@ -107,11 +107,6 @@ body::before {
   letter-spacing: -0.5px;
 }
 
-
-
-.navbar nav {
-}
-
 .navbar nav a {
   margin-left: 1.5rem;
   text-decoration: none;
