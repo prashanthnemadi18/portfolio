@@ -1004,8 +1004,8 @@ body::before {
   }
 
   .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     margin: 0 auto 1.5rem;
     object-fit: contain;
     background: #f5f5f5;
@@ -1361,8 +1361,8 @@ body::before {
 /* Small Mobile Devices */
 @media (max-width: 480px) {
   .profile-image {
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
     background: #f5f5f5;
   }
