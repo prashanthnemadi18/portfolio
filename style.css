@@ -1009,8 +1009,8 @@ body::before {
   }
 
   .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto 1.5rem;
   }
 
@@ -1363,6 +1363,11 @@ body::before {
 
 /* Small Mobile Devices */
 @media (max-width: 480px) {
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+
   .hero h1 {
     font-size: 1.8rem;
   }
