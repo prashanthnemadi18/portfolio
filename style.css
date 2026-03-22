@@ -25,6 +25,7 @@ body {
   line-height: 1.6;
   position: relative;
   overflow-x: hidden;
+  padding-top: 80px;
 }
 
 /* Cinematic Background with Depth */
@@ -81,9 +82,12 @@ body::before {
 
 /* Navbar with 3D Effect */
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 20;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -990,12 +994,21 @@ body::before {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+
   /* Navbar Mobile */
   .navbar {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem 5%;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
   }
 
   .logo-container {
