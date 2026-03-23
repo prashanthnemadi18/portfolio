@@ -821,6 +821,70 @@ body {
     }
 }
 
+/* ---- PROJECT MODAL ---- */
+.project-modal-content {
+    background: white;
+    margin: 5vh auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 12px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: zoom 0.3s;
+}
+
+.project-modal-content h2 {
+    font-family: var(--font-serif);
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.gallery-item span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-modal-content {
+        padding: 1.5rem;
+        width: 95%;
+    }
+}
+
 /* ---- MODAL ---- */
 .contact-grid {
     display: grid;

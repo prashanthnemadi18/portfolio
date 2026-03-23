@@ -178,7 +178,7 @@
                             <span>Python</span><span>TensorFlow/Keras</span><span>Flask</span><span>CNN</span><span>OpenWeatherMap API</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/prashanthnemadi18" target="_blank" class="project-link btn-view-more">View Project ↗</a>
+                            <a href="javascript:void(0)" class="project-link btn-view-more" data-project="food-waste">View more ↗</a>
                         </div>
                     </div>
                 </div>
@@ -202,7 +202,7 @@
                             <span>Next.js</span><span>React</span><span>TypeScript</span><span>Gemini AI</span><span>jsPDF</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/prashanthnemadi18" target="_blank" class="project-link btn-view-more">View Project ↗</a>
+                            <a href="javascript:void(0)" class="project-link btn-view-more" data-project="food-waste">View more ↗</a>
                         </div>
                     </div>
                 </div>
@@ -226,7 +226,7 @@
                             <span>React</span><span>Spring Boot</span><span>Gemini AI</span><span>PostgreSQL</span><span>JWT</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/prashanthnemadi18" target="_blank" class="project-link btn-view-more">View Project ↗</a>
+                            <a href="javascript:void(0)" class="project-link btn-view-more" data-project="food-waste">View more ↗</a>
                         </div>
                     </div>
                 </div>
@@ -250,7 +250,7 @@
                             <span>Python</span><span>Flask</span><span>Scikit-Learn</span><span>React</span><span>REST APIs</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/prashanthnemadi18" target="_blank" class="project-link btn-view-more">View Project ↗</a>
+                            <a href="javascript:void(0)" class="project-link btn-view-more" data-project="food-waste">View more ↗</a>
                         </div>
                     </div>
                 </div>
@@ -274,7 +274,7 @@
                             <span>Python</span><span>NLP</span><span>Flask</span><span>AI/ML</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/prashanthnemadi18" target="_blank" class="project-link btn-view-more">View Project ↗</a>
+                            <a href="javascript:void(0)" class="project-link btn-view-more" data-project="food-waste">View more ↗</a>
                         </div>
                     </div>
                 </div>
@@ -298,7 +298,7 @@
                             <span>React</span><span>Node.js</span><span>AI</span><span>PostgreSQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/prashanthnemadi18" target="_blank" class="project-link btn-view-more">View Project ↗</a>
+                            <a href="javascript:void(0)" class="project-link btn-view-more" data-project="food-waste">View more ↗</a>
                         </div>
                     </div>
                 </div>
@@ -322,7 +322,7 @@
                             <span>React</span><span>Node.js</span><span>AI</span><span>MongoDB</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/prashanthnemadi18" target="_blank" class="project-link btn-view-more">View Project ↗</a>
+                            <a href="javascript:void(0)" class="project-link btn-view-more" data-project="food-waste">View more ↗</a>
                         </div>
                     </div>
                 </div>
@@ -346,7 +346,7 @@
                             <span>Python</span><span>TensorFlow</span><span>Flask</span><span>React</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/prashanthnemadi18" target="_blank" class="project-link btn-view-more">View Project ↗</a>
+                            <a href="javascript:void(0)" class="project-link btn-view-more" data-project="food-waste">View more ↗</a>
                         </div>
                     </div>
                 </div>
@@ -547,6 +547,17 @@
         <img class="modal-content" id="modalImg">
     </div>
 
+    <!-- Project Gallery Modal -->
+    <div id="projectModal" class="modal project-modal">
+        <span class="modal-close project-modal-close">&times;</span>
+        <div class="project-modal-content">
+            <h2 id="projectModalTitle">Project Gallery</h2>
+            <div id="projectImageGallery" class="project-gallery">
+                <!-- Images will be injected here -->
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script>
         // Navbar scroll effect
@@ -613,6 +624,63 @@
         // Close modal with Escape key
         document.addEventListener("keydown", (e) => {
             if (e.key === "Escape") closeModal();
+        });
+
+        // Project Gallery Logic
+        const projectModal = document.getElementById("projectModal");
+        const projectGallery = document.getElementById("projectImageGallery");
+        const projectModalTitle = document.getElementById("projectModalTitle");
+        const projectCloseBtn = document.querySelector(".project-modal-close");
+        const viewMoreBtns = document.querySelectorAll(".btn-view-more");
+
+        const projectData = {
+            "food-waste": {
+                title: "Food Waste Reimagined",
+                images: [
+                    { src: "Food Waste Reimagined/Home page.jfif", label: "Home Page" },
+                    { src: "Food Waste Reimagined/login.jfif", label: "Login Screen" },
+                    { src: "Food Waste Reimagined/Dashborad.jfif", label: "Dashboard" },
+                    { src: "Food Waste Reimagined/add item.jfif", label: "Add Item Interface" },
+                    { src: "Food Waste Reimagined/show item.jfif", label: "Item Tracking" },
+                    { src: "Food Waste Reimagined/ai suggestion.jfif", label: "AI Suggestions" },
+                    { src: "Food Waste Reimagined/how it work.png", label: "System Workflow" }
+                ]
+            }
+        };
+
+        viewMoreBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const projectId = btn.getAttribute("data-project");
+                const data = projectData[projectId];
+                
+                if (data) {
+                    projectModalTitle.innerText = data.title;
+                    projectGallery.innerHTML = ""; // Clear previous images
+                    
+                    data.images.forEach(img => {
+                        const item = document.createElement("div");
+                        item.className = "gallery-item";
+                        item.innerHTML = `
+                            <img src="${img.src}" alt="${img.label}">
+                            <span>${img.label}</span>
+                        `;
+                        projectGallery.appendChild(item);
+                    });
+                    
+                    projectModal.style.display = "block";
+                    document.body.style.overflow = "hidden";
+                }
+            });
+        });
+
+        const closeProjectModal = () => {
+            projectModal.style.display = "none";
+            document.body.style.overflow = "auto";
+        };
+
+        projectCloseBtn.addEventListener("click", closeProjectModal);
+        projectModal.addEventListener("click", (e) => {
+            if (e.target === projectModal) closeProjectModal();
         });
     </script>
 </body>
