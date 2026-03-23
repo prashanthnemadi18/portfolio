@@ -591,23 +591,24 @@ body {
     transition: color 0.2s, gap 0.2s;
 }
 
-.project-link.live-link {
-    color: var(--text-muted);
-    border: 1px solid var(--border);
-    padding: 0.25rem 0.6rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
+.project-link.btn-view-more {
+    color: var(--white);
+    background: var(--accent);
+    padding: 0.6rem 1.25rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+    transition: all 0.2s ease;
 }
 
-.project-link.live-link:hover {
-    color: var(--accent);
-    border-color: var(--accent);
-    background: #eff6ff;
-}
-
-.project-link:hover {
-    color: var(--accent-hover);
-    gap: 0.4rem;
+.project-link.btn-view-more:hover {
+    background: var(--accent-hover);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
 }
 
 /* ---- EDUCATION ---- */
