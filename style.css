@@ -758,7 +758,69 @@ body {
     transform: scale(1.05);
 }
 
-/* ---- CONTACT ---- */
+/* ---- KEY ACHIEVEMENTS ---- */
+.key-achievements {
+    margin-top: 5rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border);
+}
+
+.key-achievements .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.key-achieve-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.key-item {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.key-icon {
+    font-size: 1.4rem;
+    color: var(--accent);
+    flex-shrink: 0;
+    padding-top: 0.2rem;
+}
+
+.key-text h4 {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    color: var(--navy);
+    margin-bottom: 0.4rem;
+}
+
+.key-text p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .key-achieve-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .key-achieve-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .key-achievements {
+        margin-top: 3.5rem;
+    }
+}
+
+/* ---- MODAL ---- */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
