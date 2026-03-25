@@ -304,10 +304,12 @@
                 </div>
 
                 <div class="project-card">
-                    <div class="project-img-box">
-                        <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80&w=800" alt="AI Quiz Platform" class="project-img">
-                        <span class="project-domain">AI & Gamification</span>
-                    </div>
+                    <a href="javascript:void(0)" class="project-img-link btn-view-more" data-project="ai-quiz">
+                        <div class="project-img-box">
+                            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800" alt="AI Quiz Platform" class="project-img">
+                            <span class="project-domain">AI & Gamification</span>
+                        </div>
+                    </a>
                     <div class="project-body">
                         <div class="project-header">
                             <h3>AI Quiz Platform</h3>
@@ -322,7 +324,7 @@
                             <span>React</span><span>Node.js</span><span>AI</span><span>MongoDB</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/prashanthnemadi18" target="_blank" class="project-link btn-view-more">View more ↗</a>
+                            <a href="javascript:void(0)" class="project-link btn-view-more" data-project="ai-quiz">View more ↗</a>
                         </div>
                     </div>
                 </div>
@@ -634,6 +636,21 @@
         const viewMoreBtns = document.querySelectorAll(".btn-view-more");
 
         const projectData = {
+            "ai-quiz": {
+                title: "AI Quiz Platform",
+                images: [
+                    { src: "AI%20Quiz%20Platform/Home%20page.png", label: "Home Page" },
+                    { src: "AI%20Quiz%20Platform/login%20page.png", label: "Login Screen" },
+                    { src: "AI%20Quiz%20Platform/Dashborad%20page.png", label: "Dashboard" },
+                    { src: "AI%20Quiz%20Platform/take%20a%20quiz%20page.png", label: "Quiz Selection" },
+                    { src: "AI%20Quiz%20Platform/start%20the%20quiz.png", label: "Start Quiz" },
+                    { src: "AI%20Quiz%20Platform/quiz%20question%20page.png", label: "Question Interface" },
+                    { src: "AI%20Quiz%20Platform/power%20full%20ai%20features.png", label: "AI Features" },
+                    { src: "AI%20Quiz%20Platform/quiz%20completed%20page.png", label: "Quiz Completed" },
+                    { src: "AI%20Quiz%20Platform/downloded%20the%20result%20page.png", label: "Result Download" },
+                    { src: "AI%20Quiz%20Platform/analytics%20page.png", label: "Analytics Dashboard" }
+                ]
+            },
             "agroguard": {
                 title: "AgroGuard AI",
                 images: [

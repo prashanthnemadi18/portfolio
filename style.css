@@ -482,6 +482,11 @@ body {
     overflow: hidden;
 }
 
+.project-img-link {
+    display: block;
+    text-decoration: none;
+}
+
 .project-img {
     width: 100%;
     height: 100%;
