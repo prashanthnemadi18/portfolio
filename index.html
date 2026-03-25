@@ -607,7 +607,7 @@
         achievementLinks.forEach(link => {
             link.addEventListener("click", (e) => {
                 e.preventDefault();
-                modal.style.display = "block";
+                modal.style.display = "flex";
                 modalImg.src = link.getAttribute("href");
                 document.body.style.overflow = "hidden"; // Prevent background scrolling
             });
@@ -715,7 +715,7 @@
                         projectGallery.appendChild(item);
                     });
                     
-                    projectModal.style.display = "block";
+                    projectModal.style.display = "flex";
                     document.body.style.overflow = "hidden";
                 }
             });
