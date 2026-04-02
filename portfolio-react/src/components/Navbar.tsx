@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
           <a href="#education" onClick={closeMenu}>Education</a>
           <a href="#achievements" onClick={closeMenu}>Achievements</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
-          <a href="/Prashanth_Nemadi.pdf" className="nav-resume" target="_blank" rel="noopener noreferrer">
+          <a href={process.env.PUBLIC_URL + "/Prashanth_Nemadi.pdf"} className="nav-resume" target="_blank" rel="noopener noreferrer">
             Resume ↗
           </a>
         </div>
