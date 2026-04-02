@@ -1,0 +1,85 @@
+.edu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-left: 2px solid var(--border-dark);
+    margin-left: 1rem;
+    padding-left: 0;
+}
+
+.edu-item {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 2rem;
+    padding: 0 0 2.5rem 2rem;
+    position: relative;
+}
+
+.edu-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    background: var(--accent);
+    border-radius: 50%;
+    border: 2px solid var(--bg);
+}
+
+.edu-year {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-light);
+    padding-top: 2px;
+    white-space: nowrap;
+}
+
+.edu-details h3 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin-bottom: 0.25rem;
+}
+
+.edu-degree {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+}
+
+.edu-meta {
+    font-size: 0.82rem;
+    color: var(--text-light);
+}
+
+.edu-meta strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .edu-item {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+        padding-bottom: 1.75rem;
+        padding-left: 1.5rem;
+    }
+
+    .edu-list {
+        margin-left: 0.5rem;
+    }
+
+    .edu-details h3 {
+        font-size: 1rem;
+    }
+
+    .edu-degree {
+        font-size: 0.85rem;
+    }
+
+    .edu-meta {
+        font-size: 0.78rem;
+    }
+}
