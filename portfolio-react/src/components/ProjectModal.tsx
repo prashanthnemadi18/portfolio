@@ -57,7 +57,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           <div className="project-gallery">
             {project.gallery?.map((image, index) => (
               <div key={index} className="gallery-item" onClick={() => handleImageClick(image)}>
-                <img src={image} alt={`${project.title} - ${getImageLabel(image)}`} />
+                <img src={process.env.PUBLIC_URL + image} alt={`${project.title} - ${getImageLabel(image)}`} />
                 <span>{getImageLabel(image)}</span>
               </div>
             ))}
@@ -70,7 +70,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           <span className="image-zoom-close" onClick={closeImageZoom}>&times;</span>
           <div className="image-zoom-content" onClick={(e) => e.stopPropagation()}>
             <div className="image-zoom-wrapper">
-              <img src={selectedImage} alt="Zoomed view" className="image-zoom-img" />
+              <img src={process.env.PUBLIC_URL + selectedImage} alt="Zoomed view" className="image-zoom-img" />
               <div className="image-zoom-label">{getSelectedImageLabel()}</div>
             </div>
           </div>

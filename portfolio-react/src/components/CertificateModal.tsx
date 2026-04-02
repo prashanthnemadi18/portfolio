@@ -14,7 +14,7 @@ const CertificateModal: React.FC<CertificateModalProps> = ({ imageUrl, title, on
         &times;
       </span>
       <div className="certificate-modal-content" onClick={(e) => e.stopPropagation()}>
-        <img src={imageUrl} alt={title} className="certificate-modal-img" />
+        <img src={process.env.PUBLIC_URL + imageUrl} alt={title} className="certificate-modal-img" />
         <div className="certificate-modal-title">{title}</div>
       </div>
     </div>
