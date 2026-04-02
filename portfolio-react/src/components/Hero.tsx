@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     <section className="hero" id="home">
       <div className="container hero-grid">
         <div className="hero-photo">
-          <img src="/profile.png" alt="Prashanth Nemadi" />
+          <img src={process.env.PUBLIC_URL + "/profile.png"} alt="Prashanth Nemadi" />
         </div>
         <div className="hero-content">
           <div className="hero-tag">Available for opportunities</div>
@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
           <div className="hero-btns">
             <a href="#projects" className="btn btn-primary">View Projects</a>
             <a href="#contact" className="btn btn-ghost">Get in Touch</a>
-            <a href="/Prashanth_Nemadi.pdf" className="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+            <a href={process.env.PUBLIC_URL + "/Prashanth_Nemadi.pdf"} className="btn btn-ghost" target="_blank" rel="noopener noreferrer">
               Resume ↗
             </a>
           </div>
