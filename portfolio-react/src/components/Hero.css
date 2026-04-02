@@ -170,7 +170,7 @@
     }
 
     .hero-content h1 {
-        font-size: 2.2rem;
+        font-size: 2.4rem; /* Increased from 2.2rem */
         word-break: break-word;
         line-height: 1.2;
     }
@@ -181,16 +181,16 @@
     }
 
     .hero-role {
-        font-size: 0.95rem;
+        font-size: 1.05rem; /* Increased from 0.95rem */
     }
 
     .hero-desc {
-        font-size: 0.92rem;
-        line-height: 1.6;
+        font-size: 1rem; /* Increased from 0.92rem */
+        line-height: 1.7; /* Better readability */
     }
 
     .hero-socials {
-        font-size: 0.82rem;
+        font-size: 0.9rem; /* Increased from 0.82rem */
         gap: 0.5rem;
     }
 
@@ -201,7 +201,7 @@
     }
 
     .hero-tag {
-        font-size: 0.75rem;
-        padding: 0.28rem 0.75rem;
+        font-size: 0.8rem; /* Increased from 0.75rem */
+        padding: 0.3rem 0.8rem;
     }
 }
