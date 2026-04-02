@@ -85,11 +85,26 @@ Download my resume: [Prashanth-N.pdf](https://prashanthnemadi18.github.io/portfo
 ## 🛠️ Portfolio Tech Stack
 
 This portfolio is built with:
-- **HTML5** - Structure
+- **React** - Modern UI framework
+- **TypeScript** - Type-safe development
 - **CSS3** - Styling with modern animations
-- **JavaScript** - Interactivity
 - **Google Fonts** - Poppins & Space Grotesk
 - **GitHub Pages** - Hosting
+
+## 🚀 Running Locally
+
+```bash
+cd portfolio-react
+npm install
+npm start
+```
+
+## 📦 Building for Production
+
+```bash
+cd portfolio-react
+npm run build
+```
 
 ## 📫 Get In Touch
 
