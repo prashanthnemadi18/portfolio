@@ -77,6 +77,19 @@ const Achievements: React.FC = () => {
             </div>
           </div>
 
+          <div className="achieve-card">
+            <div className="achieve-icon"><i className="fa-solid fa-certificate"></i></div>
+            <h3>Internship Completion Certificate</h3>
+            <p>Successfully completed software development internship with professional excellence</p>
+            <div className="achieve-date">2026</div>
+            <div 
+              className="achieve-img-link"
+              onClick={() => openCertificate('/internship-completion-certificate.png', 'Internship Completion Certificate')}
+            >
+              <img src={process.env.PUBLIC_URL + "/internship-completion-certificate.png"} alt="Internship Completion Certificate" className="achieve-img" />
+            </div>
+          </div>
+
         </div>
 
         <div className="key-achievements">
