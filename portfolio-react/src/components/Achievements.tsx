@@ -32,9 +32,9 @@ const Achievements: React.FC = () => {
             <div className="achieve-date">September 12–13, 2025</div>
             <div 
               className="achieve-img-link"
-              onClick={() => openCertificate('/hackathon-certificate-1.jpg', 'HACKMITTEN 2.0 Certificate')}
+              onClick={() => openCertificate('/certificates/hackathon-certificate-1.jpg', 'HACKMITTEN 2.0 Certificate')}
             >
-              <img src={process.env.PUBLIC_URL + "/hackathon-certificate-1.jpg"} alt="HACKMITTEN 2.0 Certificate" className="achieve-img" />
+              <img src={process.env.PUBLIC_URL + "/certificates/hackathon-certificate-1.jpg"} alt="HACKMITTEN 2.0 Certificate" className="achieve-img" />
             </div>
           </div>
 
@@ -45,9 +45,9 @@ const Achievements: React.FC = () => {
             <div className="achieve-date">September 17, 2025</div>
             <div 
               className="achieve-img-link"
-              onClick={() => openCertificate('/hackathon-certificate-2.jpg', 'Kalp-AI-thon 2025 Certificate')}
+              onClick={() => openCertificate('/certificates/hackathon-certificate-2.jpg', 'Kalp-AI-thon 2025 Certificate')}
             >
-              <img src={process.env.PUBLIC_URL + "/hackathon-certificate-2.jpg"} alt="Kalp-AI-thon 2025 Certificate" className="achieve-img" />
+              <img src={process.env.PUBLIC_URL + "/certificates/hackathon-certificate-2.jpg"} alt="Kalp-AI-thon 2025 Certificate" className="achieve-img" />
             </div>
           </div>
 
@@ -58,9 +58,9 @@ const Achievements: React.FC = () => {
             <div className="achieve-date">Volume 12 Issue 8 · January 2026</div>
             <div 
               className="achieve-img-link"
-              onClick={() => openCertificate('/ijirt-publication-certificate.jpg', 'IJIRT Publication Certificate')}
+              onClick={() => openCertificate('/certificates/ijirt-publication-certificate.jpg', 'IJIRT Publication Certificate')}
             >
-              <img src={process.env.PUBLIC_URL + "/ijirt-publication-certificate.jpg"} alt="IJIRT Publication Certificate" className="achieve-img" />
+              <img src={process.env.PUBLIC_URL + "/certificates/ijirt-publication-certificate.jpg"} alt="IJIRT Publication Certificate" className="achieve-img" />
             </div>
           </div>
 
@@ -71,9 +71,9 @@ const Achievements: React.FC = () => {
             <div className="achieve-date">2026</div>
             <div 
               className="achieve-img-link"
-              onClick={() => openCertificate('/internship-offer-letter.jpg', 'Internship Offer Letter')}
+              onClick={() => openCertificate('/certificates/internship-offer-letter.jpg', 'Internship Offer Letter')}
             >
-              <img src={process.env.PUBLIC_URL + "/internship-offer-letter.jpg"} alt="Internship Offer Letter" className="achieve-img" />
+              <img src={process.env.PUBLIC_URL + "/certificates/internship-offer-letter.jpg"} alt="Internship Offer Letter" className="achieve-img" />
             </div>
           </div>
 
@@ -84,9 +84,9 @@ const Achievements: React.FC = () => {
             <div className="achieve-date">2026</div>
             <div 
               className="achieve-img-link"
-              onClick={() => openCertificate('/internship-completion-certificate.png', 'Internship Completion Certificate')}
+              onClick={() => openCertificate('/certificates/internship-completion-certificate.png', 'Internship Completion Certificate')}
             >
-              <img src={process.env.PUBLIC_URL + "/internship-completion-certificate.png"} alt="Internship Completion Certificate" className="achieve-img" />
+              <img src={process.env.PUBLIC_URL + "/certificates/internship-completion-certificate.png"} alt="Internship Completion Certificate" className="achieve-img" />
             </div>
           </div>
 
