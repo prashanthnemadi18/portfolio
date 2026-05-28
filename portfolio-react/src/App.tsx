@@ -36,7 +36,7 @@ function App() {
             <a href="https://linkedin.com/in/prashanth-nemadi" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-linkedin"></i> LinkedIn
             </a>
-            <a href="/Prashanth_Nemadi.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Prashanth_Resume.pdf" onClick={(e) => { e.preventDefault(); window.open('/Prashanth_Resume.pdf', '_blank'); }}>
               <i className="fa-solid fa-file-pdf"></i> Resume
             </a>
           </div>

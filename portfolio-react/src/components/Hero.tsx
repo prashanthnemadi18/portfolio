@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
           <div className="hero-btns">
             <a href="#projects" className="btn btn-primary">View Projects</a>
             <a href="#contact" className="btn btn-ghost">Get in Touch</a>
-            <a href={process.env.PUBLIC_URL + "/Prashanth_Nemadi.pdf"} className="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+            <a href={`${process.env.PUBLIC_URL}/Prashanth_Resume.pdf`} className="btn btn-ghost" onClick={(e) => { e.preventDefault(); window.open(`${process.env.PUBLIC_URL}/Prashanth_Resume.pdf`, '_blank'); }}>
               Resume ↗
             </a>
           </div>
