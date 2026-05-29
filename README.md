@@ -39,7 +39,8 @@ npm start
 npm run build
 ```
 
-The app will open at [http://localhost:3000](http://localhost:3000)
+The app will open at [http://localhost:3000](http://localhost:3000) 
+Demo link (https://prashanthnemadi18.github.io/portfolio/)
 
 ## Project Structure
 
