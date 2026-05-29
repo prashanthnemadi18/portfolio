@@ -14,7 +14,7 @@ const StatsBar: React.FC = () => {
           <span className="stat-label">CGPA</span>
         </div>
         <div>
-          <span className="stat-num">2</span>
+          <span className="stat-num">3</span>
           <span className="stat-label">Hackathons</span>
         </div>
         <div>

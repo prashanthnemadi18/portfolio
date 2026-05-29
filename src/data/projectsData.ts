@@ -169,7 +169,7 @@ export const projectsData: Project[] = [
       'Responsive design optimized for both desktop and mobile users.'
     ],
     domain: 'AI & Gamification',
-    stack: ['React', 'Node.js', 'AI', 'MongoDB'],
+    stack: ['TypeScript','React', 'Node.js', 'AI', 'MongoDB',],
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800',
     gallery: [
       '/AI Quiz Platform/Home page.png',
