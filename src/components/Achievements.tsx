@@ -52,6 +52,19 @@ const Achievements: React.FC = () => {
           </div>
 
           <div className="achieve-card">
+            <div className="achieve-icon"><i className="fa-solid fa-trophy"></i></div>
+            <h3>Hackathon Achievement</h3>
+            <p>Participated in competitive hackathon and demonstrated innovative problem-solving skills</p>
+            <div className="achieve-date">2025</div>
+            <div 
+              className="achieve-img-link"
+              onClick={() => openCertificate('/certificates/hackathon-certificate-3.jpeg', 'Hackathon Certificate')}
+            >
+              <img src={process.env.PUBLIC_URL + "/certificates/hackathon-certificate-3.jpeg"} alt="Hackathon Certificate" className="achieve-img" />
+            </div>
+          </div>
+
+          <div className="achieve-card">
             <div className="achieve-icon"><i className="fa-solid fa-file-lines"></i></div>
             <h3>IJIRT Research Publication</h3>
             <p>Published paper on AI Generated Online Examination. Impact Factor: 8.017</p>
