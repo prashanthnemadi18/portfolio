@@ -183,27 +183,5 @@ export const projectsData: Project[] = [
       '/AI Quiz Platform/downloded the result page.png',
       '/AI Quiz Platform/analytics page.png'
     ]
-  },
-  {
-    id: 'ai-recruitment',
-    title: 'AI Recruitment System',
-    subtitle: 'Intelligent Candidate Matching',
-    description: [
-      'ML-powered candidate matching with automated resume screening and ranking.',
-      'Video interview analysis with sentiment detection and predictive analytics.',
-      'Advanced reporting features for tracking recruitment success metrics.'
-    ],
-    domain: 'AI Recruitment',
-    stack: ['Python', 'TensorFlow', 'Flask', 'React'],
-    image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800',
-    gallery: [
-      '/AI Recruitment System/home page.png',
-      '/AI Recruitment System/register page.png',
-      '/AI Recruitment System/candidate page.png',
-      '/AI Recruitment System/uploded the resume page.png',
-      '/AI Recruitment System/extract the information page.png',
-      '/AI Recruitment System/my appication candidate page.png',
-      '/AI Recruitment System/hr dashborad page.png'
-    ]
   }
 ];
