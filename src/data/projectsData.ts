@@ -62,7 +62,7 @@ export const projectsData: Project[] = [
       'Secure JWT authentication and real-time ATS scoring system.'
     ],
     domain: 'AI & HR Tech',
-    stack: ['React', 'Spring Boot', 'Gemini AI', 'PostgreSQL', 'JWT'],
+    stack: ['React', 'Gemini AI', 'PostgreSQL', 'JWT'],
     image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800',
     gallery: [
       '/AI-resume/landing-page.png',
@@ -140,7 +140,7 @@ export const projectsData: Project[] = [
       'Integrated analytics dashboard for HR teams with real-time insights and reporting.'
     ],
     domain: 'AI & HR Tech',
-    stack: ['React', 'Node.js', 'AI/ML', 'PostgreSQL', 'REST APIs'],
+    stack: ['React', 'Node.js', 'AI/ML', 'MongoDB', 'REST APIs'],
     image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800',
     gallery: [
       '/smart-hire/landing-page.png',

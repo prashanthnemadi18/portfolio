@@ -3,7 +3,7 @@ import { Skill } from '../types';
 export const skillsData: Skill[] = [
   {
     category: 'Languages',
-    items: ['Python', 'Java', 'JavaScript', 'TypeScript', 'C++']
+    items: ['Python', 'Java', 'JavaScript', 'TypeScript']
   },
   {
     category: 'Frontend',
@@ -11,11 +11,11 @@ export const skillsData: Skill[] = [
   },
   {
     category: 'Backend',
-    items: ['Flask', 'FastAPI', 'Spring Boot', 'Node.js', 'Express.js', 'REST APIs']
+    items: ['Flask', 'FastAPI', 'Node.js', 'Express.js', 'REST APIs']
   },
   {
     category: 'AI / ML',
-    items: ['Machine Learning', 'Scikit-Learn', 'TensorFlow', 'Google Gemini AI', 'NLP', 'Pandas', 'NumPy']
+    items: ['Machine Learning', 'TensorFlow', 'Google Gemini AI', 'NLP', 'Pandas', 'NumPy']
   },
   {
     category: 'Databases',
@@ -23,6 +23,6 @@ export const skillsData: Skill[] = [
   },
   {
     category: 'Tools',
-    items: ['Git & GitHub', 'Docker', 'Streamlit', 'Jupyter Notebook', 'VS Code', 'jsPDF']
+    items: ['Git & GitHub', 'Docker', 'Streamlit', 'Jupyter Notebook', 'VS Code']
   }
 ];
