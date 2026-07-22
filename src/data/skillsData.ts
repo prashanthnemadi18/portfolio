@@ -19,10 +19,10 @@ export const skillsData: Skill[] = [
   },
   {
     category: 'Databases',
-    items: ['MySQL', 'MongoDB', 'PostgreSQL']
+    items: ['MySQL', 'MongoDB']
   },
   {
     category: 'Tools',
-    items: ['Git & GitHub', 'Docker', 'Streamlit', 'Jupyter Notebook', 'VS Code']
+    items: ['Git & GitHub', 'vercel','Render','Netlify','Firebase','Docker', 'Streamlit', 'Jupyter Notebook', 'VS Code']
   }
 ];

@@ -6,15 +6,15 @@ const Hero: React.FC = () => {
     <section className="hero" id="home">
       <div className="container hero-grid">
         <div className="hero-photo">
-          <img src={process.env.PUBLIC_URL + "/profile.png"} alt="Prashanth Nemadi" />
+          <img src={process.env.PUBLIC_URL + "/prashanth.jpeg"} alt="Prashanth Nemadi" />
         </div>
         <div className="hero-content">
           <div className="hero-tag">Available for opportunities</div>
           <h1>Prashanth Nemadi</h1>
-          <div className="hero-role">AI Engineer & Full-Stack Developer</div>
+          <div className="hero-role">Software Engineer | Full-Stack Developer | AI Engineer</div>
           <p className="hero-desc">
-            Final-year CS student at Bahubali College of Engineering (2022–26), Shravanabelagola. 
-            I build production-ready AI systems spanning agriculture, education, legal tech, and HR recruitment.
+            B.E. Computer Science & Engineering graduate (2022–2026) from Bahubali College of Engineering, Shravanabelagola. 
+            Fresher Software Engineer with hands-on experience in AI-powered and full-stack application development. Currently seeking Software Engineer, Full-Stack Developer, and AI/ML opportunities.
           </p>
           <div className="hero-btns">
             <a href="#projects" className="btn btn-primary">View Projects</a>
