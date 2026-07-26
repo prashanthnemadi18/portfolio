@@ -1,7 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
 
 const Contact: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('Sending...');
+    
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: '953adbe4-545e-41f7-a488-f54eb800a1c9',
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to: 'prashanthnemadi@gmail.com'
+        })
+      });
+
+      const result = await response.json();
+      
+      if (result.success) {
+        setStatus('Message sent successfully! I will get back to you soon.');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setStatus(''), 5000);
+      } else {
+        setStatus('Failed to send message. Please email me directly at prashanthnemadi@gmail.com');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setStatus('Failed to send message. Please email me directly at prashanthnemadi@gmail.com');
+    }
+  };
 
   return (
     <section className="section" id="contact">
@@ -45,11 +95,7 @@ const Contact: React.FC = () => {
 
           <div className="contact-form-box">
             <h3>Send a Message</h3>
-            <form 
-              className="contact-form" 
-              action="https://formspree.io/f/xwpkwqpo"
-              method="POST"
-            >
+            <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
                 <label>
                   Name 
@@ -57,6 +103,8 @@ const Contact: React.FC = () => {
                     type="text" 
                     name="name"
                     placeholder="Your name"
+                    value={formData.name}
+                    onChange={handleChange}
                     required
                   />
                 </label>
@@ -66,6 +114,8 @@ const Contact: React.FC = () => {
                     type="email" 
                     name="email"
                     placeholder="your@email.com"
+                    value={formData.email}
+                    onChange={handleChange}
                     required
                   />
                 </label>
@@ -76,6 +126,8 @@ const Contact: React.FC = () => {
                   type="text" 
                   name="subject"
                   placeholder="What's this about?"
+                  value={formData.subject}
+                  onChange={handleChange}
                   required
                 />
               </label>
@@ -84,10 +136,24 @@ const Contact: React.FC = () => {
                 <textarea 
                   name="message"
                   placeholder="Your message..."
+                  value={formData.message}
+                  onChange={handleChange}
                   required
                 />
               </label>
               <button type="submit" className="btn btn-primary">Send Message &rarr;</button>
+              {status && (
+                <p style={{ 
+                  marginTop: '1rem', 
+                  padding: '0.75rem', 
+                  borderRadius: '4px',
+                  backgroundColor: status.includes('success') ? '#d4edda' : '#f8d7da',
+                  color: status.includes('success') ? '#155724' : '#721c24',
+                  border: `1px solid ${status.includes('success') ? '#c3e6cb' : '#f5c6cb'}`
+                }}>
+                  {status}
+                </p>
+              )}
             </form>
           </div>
 
