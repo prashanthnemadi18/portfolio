@@ -1,28 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Contact.css';
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission (you can add email service integration here)
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I will get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
-  };
 
   return (
     <section className="section" id="contact">
@@ -66,7 +45,11 @@ const Contact: React.FC = () => {
 
           <div className="contact-form-box">
             <h3>Send a Message</h3>
-            <form className="contact-form" onSubmit={handleSubmit}>
+            <form 
+              className="contact-form" 
+              action="https://formspree.io/f/xwpkwqpo"
+              method="POST"
+            >
               <div className="form-row">
                 <label>
                   Name 
@@ -74,8 +57,6 @@ const Contact: React.FC = () => {
                     type="text" 
                     name="name"
                     placeholder="Your name"
-                    value={formData.name}
-                    onChange={handleChange}
                     required
                   />
                 </label>
@@ -85,8 +66,6 @@ const Contact: React.FC = () => {
                     type="email" 
                     name="email"
                     placeholder="your@email.com"
-                    value={formData.email}
-                    onChange={handleChange}
                     required
                   />
                 </label>
@@ -97,8 +76,6 @@ const Contact: React.FC = () => {
                   type="text" 
                   name="subject"
                   placeholder="What's this about?"
-                  value={formData.subject}
-                  onChange={handleChange}
                   required
                 />
               </label>
@@ -107,8 +84,6 @@ const Contact: React.FC = () => {
                 <textarea 
                   name="message"
                   placeholder="Your message..."
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                 />
               </label>
