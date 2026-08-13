@@ -36,7 +36,7 @@ function App() {
             <a href="https://linkedin.com/in/prashanth-nemadi" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-linkedin"></i> LinkedIn
             </a>
-            <a href={`${process.env.PUBLIC_URL}/Prashanth_Resume.pdf`} onClick={(e) => { e.preventDefault(); window.open(`${process.env.PUBLIC_URL}/Prashanth_Resume.pdf`, '_blank'); }}>
+            <a href={`${process.env.PUBLIC_URL}/prashanth-nemadi-software-developer-full-stack-ai.pdf`} onClick={(e) => { e.preventDefault(); window.open(`${process.env.PUBLIC_URL}/prashanth-nemadi-software-developer-full-stack-ai.pdf`, '_blank'); }}>
               <i className="fa-solid fa-file-pdf"></i> Resume
             </a>
           </div>
