@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     <section className="hero" id="home">
       <div className="container hero-grid">
         <div className="hero-photo">
-          <img src={process.env.PUBLIC_URL + "/prashanth.jpeg"} alt="Prashanth Nemadi" />
+          <img src={process.env.PUBLIC_URL + "/prashu-image.png"} alt="Prashanth Nemadi" />
         </div>
         <div className="hero-content">
           <div className="hero-tag">Available for opportunities</div>
