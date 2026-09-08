@@ -20,9 +20,7 @@
         align-items: flex-start;
         padding-top: 60px;
     }
-}
-
-.modal-close {
+}.modal-close {
     position: absolute;
     top: 20px;
     right: 35px;
@@ -178,8 +176,9 @@
     }
 
     .carousel-image {
-        min-height: 300px;
-        max-height: 500px;
+        min-height: 350px;
+        max-height: 550px;
+        object-fit: contain;
     }
 
     .carousel-nav {
@@ -211,12 +210,20 @@
 
 @media (max-width: 600px) {
     .carousel-container {
-        gap: 0.4rem;
+        gap: 0.3rem;
     }
 
     .carousel-image {
-        min-height: 250px;
-        max-height: 450px;
+        min-height: auto;
+        max-height: 500px;
+        height: auto;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .carousel-image-wrapper {
+        border-radius: 6px;
+        max-width: 100%;
     }
 
     .carousel-nav {
@@ -226,40 +233,8 @@
     }
 
     .carousel-image-label {
-        font-size: 0.8rem;
-        padding: 0.7rem;
-    }
-
-    .carousel-counter {
-        font-size: 0.95rem;
+        font-size: 0.75rem;
         padding: 0.6rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .carousel-container {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .carousel-nav {
-        position: relative;
-        width: 45px;
-        height: 45px;
-    }
-
-    .carousel-image-wrapper {
-        flex: 1;
-    }
-
-    .carousel-image {
-        min-height: 200px;
-        max-height: 350px;
-    }
-
-    .carousel-image-label {
-        font-size: 0.8rem;
-        padding: 0.65rem;
     }
 
     .carousel-counter {
@@ -267,20 +242,95 @@
         padding: 0.55rem;
     }
 
+    .project-modal-content {
+        padding: 0.75rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: stretch;
+    }
+
+    .carousel-image-wrapper {
+        flex: 1;
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+    }
+
+    .carousel-image {
+        min-height: auto;
+        max-height: 550px;
+        height: auto;
+        object-fit: contain;
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .carousel-nav {
+        position: static;
+        width: 45px;
+        height: 45px;
+        font-size: 1.6rem;
+        align-self: center;
+    }
+
+    .carousel-image-wrapper {
+        order: 1;
+    }
+
+    .carousel-nav-prev {
+        order: 0;
+    }
+
+    .carousel-nav-next {
+        order: 2;
+    }
+
+    .carousel-image-label {
+        font-size: 0.75rem;
+        padding: 0.6rem;
+        border-radius: 0 0 4px 4px;
+    }
+
+    .carousel-counter {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+
     .modal-close {
-        right: 15px;
-        top: 10px;
-        font-size: 35px;
+        right: 10px;
+        top: 5px;
+        font-size: 32px;
+    }
+
+    .modal {
+        padding: 8px;
+        align-items: flex-start;
+        padding-top: 55px;
     }
 
     .project-modal-content {
-        padding: 1.25rem;
-        width: 98%;
+        padding: 0.75rem;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 6px;
+        max-height: 90vh;
     }
 
     .project-modal-content h2 {
-        font-size: 1.3rem;
-        margin-bottom: 1.25rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+        padding: 0;
+    }
+
+    .project-gallery-carousel {
+        gap: 0.6rem;
     }
 }
 
