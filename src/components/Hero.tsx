@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
           <div className="hero-btns">
             <a href="#projects" className="btn btn-primary">View Projects</a>
             <a href="#contact" className="btn btn-ghost">Get in Touch</a>
-            <a href={`${process.env.PUBLIC_URL}/prashanth-nemadi-software-developer-full-stack-ai.pdf`} className="btn btn-ghost" onClick={(e) => { e.preventDefault(); window.open(`${process.env.PUBLIC_URL}/prashanth-nemadi-software-developer-full-stack-ai.pdf`, '_blank'); }}>
+            <a href={`${process.env.PUBLIC_URL}/Prashanth-Nemadi.pdf`} className="btn btn-ghost" onClick={(e) => { e.preventDefault(); window.open(`${process.env.PUBLIC_URL}/Prashanth-Nemadi.pdf`, '_blank'); }}>
               Resume ↗
             </a>
           </div>
