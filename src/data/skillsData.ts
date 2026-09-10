@@ -3,7 +3,7 @@ import { Skill } from '../types';
 export const skillsData: Skill[] = [
   {
     category: 'Languages',
-    items: ['Python', 'Java', 'JavaScript', 'TypeScript']
+    items: ['Python', 'JavaScript', 'TypeScript']
   },
   {
     category: 'Frontend',
@@ -11,7 +11,7 @@ export const skillsData: Skill[] = [
   },
   {
     category: 'Backend',
-    items: ['Flask', 'FastAPI', 'Node.js', 'Express.js', 'REST APIs']
+    items: ['Flask', 'FastAPI', 'Node.js', 'REST APIs','JWT Authentication']
   },
   {
     category: 'AI / ML',
@@ -23,6 +23,6 @@ export const skillsData: Skill[] = [
   },
   {
     category: 'Tools',
-    items: ['Git & GitHub', 'vercel','Render','Netlify','Firebase','Docker', 'Streamlit', 'Jupyter Notebook', 'VS Code']
+    items: ['Git & GitHub', 'vercel','Render','Netlify', 'Jupyter Notebook', 'VS Code']
   }
 ];

@@ -53,37 +53,6 @@ export const projectsData: Project[] = [
     ]
   },
   {
-    id: 'ai-resume',
-    title: 'AI Resume Builder',
-    subtitle: 'ATS Optimization & Real-Time Scoring',
-    description: [
-      'Modern AI-powered resume builder with multiple professional templates.',
-      'Integrated Google Gemini AI for professional content generation and auto-save.',
-      'Secure JWT authentication and real-time ATS scoring system.'
-    ],
-    domain: 'AI & HR Tech',
-    stack: ['React', 'Gemini AI', 'PostgreSQL', 'JWT'],
-    image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800',
-    gallery: [
-      '/AI-resume/landing-page.png',
-      '/AI-resume/power-features-for-job-seekers.png',
-      '/AI-resume/create-account.png',
-      '/AI-resume/dashboard.png',
-      '/AI-resume/candidate-dashborad.png',
-      '/AI-resume/persnol-details.png',
-      '/AI-resume/professional-narrative.png',
-      '/AI-resume/education.png',
-      '/AI-resume/work-experience.png',
-      '/AI-resume/projects.png',
-      '/AI-resume/skills.png',
-      '/AI-resume/achievements.png',
-      '/AI-resume/certifications.png',
-      '/AI-resume/complete-resume.png',
-      '/AI-resume/check-ats-resume-score.png',
-      '/AI-resume/candidate-dashborad-after.png'
-    ]
-  },
-  {
     id: 'food-waste',
     title: 'Food Waste Reimagined',
     subtitle: 'Agriculture & Sustainability Platform',
@@ -103,31 +72,6 @@ export const projectsData: Project[] = [
       '/food-waste/show-item.jfif',
       '/food-waste/ai-suggestion.jfif',
       '/food-waste/how-it-works.png'
-    ]
-  },
-  {
-    id: 'legal-risk',
-    title: 'LegalRisk AI Platform',
-    subtitle: 'Contract Review & Risk Assessment',
-    description: [
-      'AI-powered legal risk assessment system using NLP for contract review.',
-      'Provides automated risk scoring and compliance checking for legal documents.',
-      'Includes secure document management and detailed reporting features.'
-    ],
-    domain: 'AI & Legal Tech',
-    stack: ['Python', 'NLP', 'Flask', 'AI/ML'],
-    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800',
-    gallery: [
-      '/LegalRisk AI Platform/Home page.png',
-      '/LegalRisk AI Platform/_login page.png',
-      '/LegalRisk AI Platform/dashboard page.png',
-      '/LegalRisk AI Platform/risk-dashboard page.png',
-      '/LegalRisk AI Platform/analysis page.png',
-      '/LegalRisk AI Platform/Identified Risk Factors page.png',
-      '/LegalRisk AI Platform/risk facrors 3 page.png',
-      '/LegalRisk AI Platform/Strategic Recommendations page.png',
-      '/LegalRisk AI Platform/Export & Documentation page.png',
-      '/LegalRisk AI Platform/risk factor pdf documentation.png'
     ]
   },
   {

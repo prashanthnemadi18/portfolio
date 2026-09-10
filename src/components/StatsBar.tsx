@@ -6,7 +6,7 @@ const StatsBar: React.FC = () => {
     <div className="stats-bar">
       <div className="container stats-grid">
         <div>
-          <span className="stat-num">8+</span>
+          <span className="stat-num">5+</span>
           <span className="stat-label">AI Projects</span>
         </div>
         <div>
